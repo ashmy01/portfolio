@@ -22,11 +22,15 @@ const Hero = () => {
               <div className="absolute top-4 left-4 w-72 h-72 bg-gradient-to-br from-accent/30 to-primary/30 rounded-full"></div>
               
               {/* Profile image placeholder */}
-              <div className="relative w-full h-full rounded-full overflow-hidden border border-primary/20 bg-gradient-to-br from-card/50 to-card/30 backdrop-blur-sm">
+              <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-primary/40 shadow-2xl shadow-primary/30 bg-gradient-to-br from-card/60 to-card/30 backdrop-blur-xl scale-110">
                 <img 
-                  src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=400&fit=crop&crop=face"
+                  src="me2.png"
                   alt="Aishi Mukhopadhyay"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover rounded-full drop-shadow-2xl"
+                  style={{
+                    filter: 'drop-shadow(0 12px 32px rgba(80, 80, 180, 0.25)) drop-shadow(0 2px 8px rgba(0,0,0,0.10))',
+                    transform: 'perspective(900px) rotateY(-8deg) scale(1.08)'
+                  }}
                 />
               </div>
             </div>
