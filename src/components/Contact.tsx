@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Mail, MapPin, Phone, Send, Linkedin, Github, Twitter } from 'lucide-react';
 
@@ -29,12 +28,9 @@ const Contact = () => {
 
   return (
     <section id="contact" className="py-20 md:py-32 relative">
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-t from-secondary/10 via-background to-background"></div>
-      
       <div className="max-w-6xl mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 font-tech">
             <span className="gradient-text">Let's Create Together</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">

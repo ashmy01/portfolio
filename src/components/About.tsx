@@ -12,14 +12,11 @@ const About = () => {
 
   return (
     <section id="about" className="py-20 md:py-32 relative">
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-background via-secondary/5 to-background"></div>
-      
       <div className="max-w-6xl mx-auto px-6 relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Content */}
           <div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 font-tech">
               <span className="gradient-text">About Me</span>
             </h2>
             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">

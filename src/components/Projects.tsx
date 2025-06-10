@@ -36,12 +36,9 @@ const Projects = () => {
 
   return (
     <section id="projects" className="py-20 md:py-32 relative">
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-background via-muted/20 to-background"></div>
-      
       <div className="max-w-6xl mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 font-tech">
             <span className="gradient-text">Selected Projects</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -87,7 +84,7 @@ const Projects = () => {
                   </div>
                 )}
                 
-                <h3 className="text-2xl font-bold text-foreground mb-4 group-hover:gradient-text transition-all duration-300">
+                <h3 className="text-2xl font-bold text-foreground mb-4 group-hover:gradient-text transition-all duration-300 font-tech">
                   {project.title}
                 </h3>
                 

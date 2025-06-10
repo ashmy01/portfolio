@@ -27,14 +27,10 @@ const Navigation = () => {
       isScrolled ? 'bg-background/80 backdrop-blur-xl shadow-lg shadow-primary/5 border-b border-primary/10' : 'bg-transparent'
     }`}>
       <div className="max-w-6xl mx-auto px-6 py-4">
-        <div className="flex items-center justify-between">
-          <h1 className="text-xl font-bold gradient-text">
-            Aishi Mukhopadhyay
-          </h1>
-          
-          {/* Desktop Menu */}
+        <div className="flex items-center justify-center">
+          {/* Desktop Menu - Centered */}
           <div className="hidden md:flex space-x-8">
-            {['About', 'Projects', 'Contact'].map((item) => (
+            {['About', 'Experience', 'Projects', 'Contact'].map((item) => (
               <button
                 key={item}
                 onClick={() => scrollToSection(item.toLowerCase())}
@@ -58,7 +54,7 @@ const Navigation = () => {
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
           <div className="md:hidden mt-4 py-4 bg-card/95 backdrop-blur-xl rounded-xl shadow-xl border border-primary/10">
-            {['About', 'Projects', 'Contact'].map((item) => (
+            {['About', 'Experience', 'Projects', 'Contact'].map((item) => (
               <button
                 key={item}
                 onClick={() => scrollToSection(item.toLowerCase())}

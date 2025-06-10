@@ -93,6 +93,24 @@
 
   body {
     @apply bg-background text-foreground;
+    position: relative;
+  }
+
+  /* Static spotlight background */
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+      radial-gradient(800px circle at 50% 30%, rgba(59, 130, 246, 0.15), transparent 40%),
+      radial-gradient(600px circle at 80% 60%, rgba(139, 92, 246, 0.1), transparent 40%),
+      radial-gradient(400px circle at 20% 80%, rgba(168, 85, 247, 0.08), transparent 40%),
+      #0a0a0a;
+    z-index: -1;
+    pointer-events: none;
   }
 }
 
@@ -129,5 +147,9 @@
     mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     mask-composite: xor;
     -webkit-mask-composite: xor;
+  }
+
+  .font-tech {
+    font-family: 'Orbitron', monospace;
   }
 }
