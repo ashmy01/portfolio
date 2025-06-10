@@ -38,25 +38,25 @@ const Hero = () => {
 
           {/* Right side - Content */}
           <div className="order-1 lg:order-2 text-center lg:text-left">
-            <div className="inline-flex items-center gap-2 mb-6 px-6 py-3 bg-gradient-to-r from-primary/10 to-accent/10 backdrop-blur-sm border border-primary/20 rounded-full text-sm text-primary">
+            {/* <div className="inline-flex items-center gap-2 mb-6 px-6 py-3 bg-gradient-to-r from-primary/10 to-accent/10 backdrop-blur-sm border border-primary/20 rounded-full text-sm text-primary">
               <Sparkles size={16} className="text-accent animate-pulse" />
               Available for new opportunities
-            </div>
+            </div> */}
             
             <h1 className="text-5xl md:text-6xl font-bold mb-6 font-tech">
-              <span className="block text-foreground mb-2">Hi!</span>
-              <span className="block text-foreground mb-2">I am</span>
+              <span className="block text-foreground mb-2">Hi! I am </span>
+              
               <span className="block gradient-text font-extrabold">
                 Aishi.
               </span>
             </h1>
             
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl leading-relaxed">
-              A creative professional crafting digital experiences that bridge 
-              <span className="text-primary font-medium"> functionality </span>
+              A self-driven coder blending AI and Web3, building the future with 
+              <span className="text-primary font-medium"> conviction </span>
               and
-              <span className="text-accent font-medium"> artistry</span>. 
-              With 3+ years of experience in design and development.
+              <span className="text-accent font-medium"> clean commits</span>. 
+              With 1+years of experience in design and development.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center mb-12">
