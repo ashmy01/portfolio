@@ -35,11 +35,14 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-20 md:py-32 bg-muted/30">
-      <div className="max-w-6xl mx-auto px-6">
+    <section id="projects" className="py-20 md:py-32 relative">
+      {/* Background gradient */}
+      <div className="absolute inset-0 bg-gradient-to-b from-background via-muted/20 to-background"></div>
+      
+      <div className="max-w-6xl mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-            Selected Projects
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            <span className="gradient-text">Selected Projects</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             A curated collection of my recent work, showcasing diverse challenges 
@@ -51,7 +54,7 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div 
               key={project.title}
-              className={`group relative overflow-hidden rounded-2xl bg-card border border-border hover:border-accent/50 transition-all duration-500 hover:shadow-2xl ${
+              className={`group relative overflow-hidden rounded-2xl bg-card/30 backdrop-blur-sm border border-primary/10 hover:border-accent/30 transition-all duration-500 hover:shadow-2xl hover:shadow-primary/20 ${
                 project.featured ? 'lg:grid lg:grid-cols-2' : ''
               }`}
             >
@@ -62,15 +65,15 @@ const Projects = () => {
                   alt={project.title}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-primary/10 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-300"></div>
                 
                 {/* Overlay buttons */}
                 <div className="absolute top-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <button className="p-2 bg-background/90 backdrop-blur-sm rounded-full hover:bg-background transition-colors duration-200">
-                    <ExternalLink size={16} className="text-foreground" />
+                  <button className="p-3 bg-card/90 backdrop-blur-sm border border-primary/20 rounded-full hover:bg-primary/10 hover:border-primary/40 transition-all duration-200">
+                    <ExternalLink size={16} className="text-primary" />
                   </button>
-                  <button className="p-2 bg-background/90 backdrop-blur-sm rounded-full hover:bg-background transition-colors duration-200">
-                    <Github size={16} className="text-foreground" />
+                  <button className="p-3 bg-card/90 backdrop-blur-sm border border-primary/20 rounded-full hover:bg-primary/10 hover:border-primary/40 transition-all duration-200">
+                    <Github size={16} className="text-primary" />
                   </button>
                 </div>
               </div>
@@ -78,13 +81,13 @@ const Projects = () => {
               {/* Content */}
               <div className="p-8">
                 {project.featured && (
-                  <div className="inline-flex items-center gap-2 mb-4 px-3 py-1 bg-accent/10 text-accent rounded-full text-sm font-medium">
-                    <div className="w-2 h-2 bg-accent rounded-full"></div>
+                  <div className="inline-flex items-center gap-2 mb-4 px-4 py-2 bg-gradient-to-r from-primary/10 to-accent/10 border border-primary/20 text-primary rounded-full text-sm font-medium">
+                    <div className="w-2 h-2 bg-gradient-to-r from-primary to-accent rounded-full animate-pulse"></div>
                     Featured Project
                   </div>
                 )}
                 
-                <h3 className="text-2xl font-bold text-foreground mb-4 group-hover:text-accent transition-colors duration-300">
+                <h3 className="text-2xl font-bold text-foreground mb-4 group-hover:gradient-text transition-all duration-300">
                   {project.title}
                 </h3>
                 
@@ -96,16 +99,16 @@ const Projects = () => {
                   {project.tags.map((tag) => (
                     <span 
                       key={tag}
-                      className="px-3 py-1 bg-accent/10 text-accent rounded-full text-sm font-medium"
+                      className="px-3 py-1 bg-gradient-to-r from-primary/10 to-accent/10 border border-primary/20 text-primary rounded-full text-sm font-medium hover:from-primary/20 hover:to-accent/20 transition-all duration-300"
                     >
                       {tag}
                     </span>
                   ))}
                 </div>
                 
-                <button className="inline-flex items-center gap-2 text-foreground hover:text-accent transition-colors duration-300 font-medium">
+                <button className="inline-flex items-center gap-2 text-foreground hover:text-primary transition-colors duration-300 font-medium group/btn">
                   View Project
-                  <ArrowRight size={16} className="transition-transform duration-300 group-hover:translate-x-1" />
+                  <ArrowRight size={16} className="transition-transform duration-300 group-hover/btn:translate-x-1" />
                 </button>
               </div>
             </div>
