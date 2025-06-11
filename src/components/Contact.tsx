@@ -21,9 +21,9 @@ const Contact = () => {
   };
 
   const socialLinks = [
-    { icon: Linkedin, href: '#', label: 'LinkedIn' },
-    { icon: Github, href: '#', label: 'GitHub' },
-    { icon: Twitter, href: '#', label: 'Twitter' }
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/amukhopadhyay1/', label: 'LinkedIn' },
+    { icon: Github, href: 'https://github.com/ashmy01', label: 'GitHub' },
+    { icon: Twitter, href: 'https://x.com/AishiMukho26615', label: 'Twitter' }
   ];
 
   return (
@@ -34,7 +34,7 @@ const Contact = () => {
             <span className="gradient-text">Let's Create Together</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Have a project in mind or just want to chat? I'd love to hear from you. 
+            Have a project in mind and want to collaborate ? I'd love to hear from you. 
             Let's discuss how we can bring your ideas to life.
           </p>
         </div>
@@ -51,7 +51,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Email</p>
-                  <p className="text-foreground font-medium">aishi@example.com</p>
+                  <p className="text-foreground font-medium">aishimukhopadhyay15@gmail.com</p>
                 </div>
               </div>
               
@@ -61,7 +61,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Phone</p>
-                  <p className="text-foreground font-medium">+1 (555) 123-4567</p>
+                  <p className="text-foreground font-medium">+91 8910272871 </p>
                 </div>
               </div>
               
@@ -71,7 +71,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Location</p>
-                  <p className="text-foreground font-medium">San Francisco, CA</p>
+                  <p className="text-foreground font-medium">Kolkata,India </p>
                 </div>
               </div>
             </div>
