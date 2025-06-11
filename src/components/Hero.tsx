@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ArrowDown, Sparkles } from 'lucide-react';
 
@@ -16,23 +15,38 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left side - Profile Image */}
           <div className="relative order-2 lg:order-1">
-            <div className="relative w-80 h-80 mx-auto">
-              {/* Background blob */}
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-full blur-3xl"></div>
-              <div className="absolute top-4 left-4 w-72 h-72 bg-gradient-to-br from-accent/30 to-primary/30 rounded-full"></div>
+            <div className="relative w-[400px] h-[600px] mx-auto overflow-hidden">
+              {/* Protruding image */}
+              <img
+                src="oisibgless.png"
+                alt="Aishi Mukhopadhyay"
+                className="absolute bottom-0 left-1/2 -translate-x-1/2 h-[600px] w-auto object-cover object-top z-20"
+                style={{
+                  filter: 'drop-shadow(0 10px 20px rgba(0, 0, 0, 0.2))',
+                }}
+              />
+
+              {/* White mask using box-shadow trick */}
+              <div 
+                className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full z-30"
+                style={{
+                  background: 'transparent',
+                  boxShadow: '0 100px 0 40px rgb(var(--background))'
+                }}
+              ></div>
               
-              {/* Profile image placeholder */}
-              <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-primary/40 shadow-2xl shadow-primary/30 bg-gradient-to-br from-card/60 to-card/30 backdrop-blur-xl scale-110">
+              {/* Circle container */}
+              <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-gradient-to-br from-primary to-accent rounded-full overflow-hidden border-4 border-primary/50">
+                {/* This image is clipped by the container */}
                 <img 
                   src="me2.png"
-                  alt="Aishi Mukhopadhyay"
-                  className="w-full h-full object-cover rounded-full drop-shadow-2xl"
-                  style={{
-                    filter: 'drop-shadow(0 12px 32px rgba(80, 80, 180, 0.25)) drop-shadow(0 2px 8px rgba(0,0,0,0.10))',
-                    transform: 'perspective(900px) rotateY(-8deg) scale(1.08)'
-                  }}
+                  alt=""
+                  className="absolute bottom-0 left-1/2 -translate-x-1/2 h-[600px] w-auto object-cover object-top"
                 />
               </div>
+              
+              {/* Circle border overlay */}
+              <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full border-4 border-primary/30 z-10"></div>
             </div>
           </div>
 
