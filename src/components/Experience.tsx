@@ -7,11 +7,11 @@ const Experience = () => {
 
   const experiences = [
     {
-      title: "Senior Full-Stack Developer",
-      company: "TechCorp Solutions",
-      location: "San Francisco, CA",
-      period: "2023 - Present",
-      description: "Leading development of scalable web applications using React, Node.js, and cloud technologies. Mentoring junior developers and architecting system solutions.",
+      title: "McKinsey Forward Program (2025)",
+      company: "McKinsey & Company",
+      location: "Remote",
+      period: "May 2023 - Present",
+      description: "Completed a 10-week intensive online program by McKinsey, building key workplace skills like adaptability, communication, problem-solving, and digital proficiency, while earning a digital badge and joining a global network of lifelong learners.",
       achievements: [
         "Improved application performance by 40%",
         "Led team of 5 developers",
@@ -21,11 +21,11 @@ const Experience = () => {
       color: "from-blue-500 to-cyan-500"
     },
     {
-      title: "UI/UX Designer & Developer",
-      company: "Creative Studio Inc",
-      location: "Remote",
-      period: "2022 - 2023",
-      description: "Designed and developed user interfaces for mobile and web applications, focusing on user experience and accessibility.",
+      title: "UI/UX Domain Lead",
+      company: "GDG On Campus,HITK",
+      location: "Kolkata, India",
+      period: "September 2024 - July 2024",
+      description: "Designed the official club website, led visual design for promotional materials, and contributed to the club magazine as part of the editorial team.",
       achievements: [
         "Increased user engagement by 60%",
         "Redesigned 3 major products",
@@ -34,26 +34,26 @@ const Experience = () => {
       icon: Palette,
       color: "from-purple-500 to-pink-500"
     },
-    {
-      title: "Frontend Developer",
-      company: "StartupXYZ",
-      location: "New York, NY",
-      period: "2021 - 2022",
-      description: "Built responsive web applications and collaborated with cross-functional teams to deliver high-quality products.",
-      achievements: [
-        "Delivered 15+ projects on time",
-        "Reduced load times by 50%",
-        "Implemented modern tech stack"
-      ],
-      icon: Zap,
-      color: "from-green-500 to-emerald-500"
-    }
+    // {
+    //   title: "Frontend Developer",
+    //   company: "StartupXYZ",
+    //   location: "New York, NY",
+    //   period: "2021 - 2022",
+    //   description: "Built responsive web applications and collaborated with cross-functional teams to deliver high-quality products.",
+    //   achievements: [
+    //     "Delivered 15+ projects on time",
+    //     "Reduced load times by 50%",
+    //     "Implemented modern tech stack"
+    //   ],
+    //   icon: Zap,
+    //   color: "from-green-500 to-emerald-500"
+    // }
   ];
 
   const achievements = [
-    { title: "UX Design Excellence Award", year: "2023", organization: "Design Institute" },
-    { title: "Best Developer Portfolio", year: "2022", organization: "Dev Community" },
-    { title: "Innovation in Web Development", year: "2021", organization: "Tech Awards" }
+    { title: "Hult Prize (on campus)-2nd Runners Up", year: "2025", organization: "Hult Prize Organization" },
+    { title: "Winner - Bulliverse AI Agent Track Prize", year: "2024", organization: "Unfold by CoinDCX" },
+    { title: "Top 50 Finalists - SIF Space Hackathon", year: "2024", organization: "ISRO" }
   ];
 
   return (
@@ -159,11 +159,11 @@ const Experience = () => {
               {/* Stats */}
               <div className="grid grid-cols-2 gap-4 mt-8">
                 <div className="p-4 bg-gradient-to-br from-primary/10 to-accent/10 rounded-xl border border-primary/20 text-center">
-                  <div className="text-2xl font-bold gradient-text font-tech">50+</div>
+                  <div className="text-2xl font-bold gradient-text font-tech">20+</div>
                   <div className="text-sm text-muted-foreground">Projects Completed</div>
                 </div>
                 <div className="p-4 bg-gradient-to-br from-accent/10 to-primary/10 rounded-xl border border-accent/20 text-center">
-                  <div className="text-2xl font-bold gradient-text font-tech">3+</div>
+                  <div className="text-2xl font-bold gradient-text font-tech">1.5+</div>
                   <div className="text-sm text-muted-foreground">Years Experience</div>
                 </div>
               </div>

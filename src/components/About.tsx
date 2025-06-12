@@ -57,11 +57,13 @@ const About = () => {
                 <p className="text-sm text-muted-foreground">{skill.description}</p>
               </div>
             ))}
+            
           </div>
         </div>
       </div>
     </section>
   );
 };
+
 
 export default About;

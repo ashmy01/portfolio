@@ -81,7 +81,7 @@ const Hero = () => {
               <span className="text-primary font-medium"> conviction </span>
               and
               <span className="text-accent font-medium"> clean commits</span>. 
-              With 1+years of experience in design and development.
+              With 1+ years of experience in design and development.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center mb-12">
@@ -91,7 +91,7 @@ const Hero = () => {
               >
                 Hire Me
               </button>
-              <button className="px-8 py-4 border border-primary/30 bg-card/50 backdrop-blur-sm rounded-full hover:bg-primary/10 hover:border-primary/50 transition-all duration-300 text-foreground font-medium">
+              <button onClick={() =>window.location.href ="https://aishi-resume.tiiny.site"} className="px-8 py-4 border border-primary/30 bg-card/50 backdrop-blur-sm rounded-full hover:bg-primary/10 hover:border-primary/50 transition-all duration-300 text-foreground font-medium">
                 Download CV
               </button>
             </div>
@@ -124,7 +124,7 @@ const Hero = () => {
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
           <button 
             onClick={scrollToAbout}
-            className="animate-bounce p-3 rounded-full bg-card/30 backdrop-blur-sm border border-primary/20 hover:bg-primary/10 hover:border-primary/40 transition-all duration-300"
+            className="absolute p-3 rounded-full bg-card/30 backdrop-blur-sm border border-primary/20 hover:bg-primary/10 hover:border-primary/40 transition-all duration-300"
           >
             <ArrowDown size={24} className="text-primary" />
           </button>
