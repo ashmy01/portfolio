@@ -27,16 +27,22 @@ const Hero = () => {
               />
 
               {/* White mask using box-shadow trick */}
-              <div 
-                className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full z-30"
+              <div
+                className="absolute bottom-0 left-0 w-[400px] h-[400px] z-30"
                 style={{
                   background: 'transparent',
-                  boxShadow: '0 100px 0 40px rgb(var(--background))'
+                  boxShadow: '0 100px 0 40px rgb(var(--background))',
+                  borderRadius: '25% 75% 53% 47% / 53% 42% 58% 47%',
                 }}
               ></div>
               
               {/* Circle container */}
-              <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-gradient-to-br from-primary to-accent rounded-full overflow-hidden border-4 border-primary/50">
+              <div
+                className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-gradient-to-br from-primary to-accent overflow-hidden border-4 border-primary/50"
+                style={{
+                  borderRadius: '25% 75% 53% 30% / 53% 42% 58% 47%',
+                }}
+              >
                 {/* This image is clipped by the container */}
                 <img 
                   src="me2.png"
@@ -46,7 +52,12 @@ const Hero = () => {
               </div>
               
               {/* Circle border overlay */}
-              <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full border-4 border-primary/30 z-10"></div>
+              <div
+                className="absolute bottom-0 left-0 w-[400px] h-[400px] border-4 border-primary/30 z-10"
+                style={{
+                  borderRadius: '25% 75% 53% 30% / 53% 42% 58% 47%',
+                }}
+              ></div>
             </div>
           </div>
 
