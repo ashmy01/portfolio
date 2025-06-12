@@ -12,10 +12,6 @@ const Experience = () => {
       location: "Remote",
       period: "May 2023 - Present",
       description: "Completed a 10-week intensive online program by McKinsey, building key workplace skills like adaptability, communication, problem-solving, and digital proficiency, while earning a digital badge and joining a global network of lifelong learners.",
-      achievements: [
-        "Learnt from about problem solving, communication and adaptbility",
-        "recieved badge for completion"
-      ],
       icon: Code,
       color: "from-blue-500 to-cyan-500"
     },
@@ -25,11 +21,7 @@ const Experience = () => {
       location: "Kolkata, India",
       period: "September 2024 - July 2024",
       description: "Designed the official club website, led visual design for promotional materials, and contributed to the club magazine as part of the editorial team.",
-      achievements: [
-        "Increased user engagement by 60%",
-        "Redesigned 3 major products",
-        "Won UX Design Award 2023"
-      ],
+     
       icon: Palette,
       color: "from-purple-500 to-pink-500"
     },
@@ -111,19 +103,7 @@ const Experience = () => {
                       
                       <p className="text-muted-foreground mb-4">{exp.description}</p>
                       
-                      {activeIndex === index && (
-                        <div className="space-y-2 animate-fade-in">
-                          <h5 className="text-sm font-medium text-accent">Key Achievements:</h5>
-                          <ul className="space-y-1">
-                            {exp.achievements.map((achievement, i) => (
-                              <li key={i} className="text-sm text-muted-foreground flex items-center gap-2">
-                                <div className="w-1.5 h-1.5 bg-gradient-to-r from-primary to-accent rounded-full"></div>
-                                {achievement}
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-                      )}
+                      
                     </div>
                   </div>
                 ))}
