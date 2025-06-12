@@ -80,7 +80,7 @@ const Hero = () => {
               >
                 Hire Me
               </button>
-              <button className="px-8 py-4 border border-primary/30 bg-card/50 backdrop-blur-sm rounded-full hover:bg-primary/10 hover:border-primary/50 transition-all duration-300 text-foreground font-medium">
+              <button onClick={() =>window.location.href ="https://aishi-resume.tiiny.site"} className="px-8 py-4 border border-primary/30 bg-card/50 backdrop-blur-sm rounded-full hover:bg-primary/10 hover:border-primary/50 transition-all duration-300 text-foreground font-medium">
                 Download CV
               </button>
             </div>
