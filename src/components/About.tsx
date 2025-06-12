@@ -4,7 +4,7 @@ import { Code, Palette, Coffee, Heart } from 'lucide-react';
 
 const About = () => {
   const skills = [
-    { icon: Code, name: 'Development', description: 'Full-stack web development with modern frameworks' },
+    { icon: Code, name: 'Development', description: 'Gen AI & Web3 ' },
     { icon: Palette, name: 'Design', description: 'UI/UX design with attention to detail and user experience' },
     { icon: Coffee, name: 'Strategy', description: 'Product strategy and digital transformation' },
     { icon: Heart, name: 'Passion', description: 'Bringing ideas to life with creativity and precision' }
@@ -29,7 +29,7 @@ const About = () => {
               <p>
                 With a background in both design and development, I bring a unique 
                 perspective to every project. I love solving complex problems with 
-                <span className="text-accent font-medium"> elegant solutions</span> 
+                <span className="text-accent font-medium"> elegant solutions </span> 
                 and have a keen eye for the details that make the difference.
               </p>
               <p>
