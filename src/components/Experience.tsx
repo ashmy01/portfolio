@@ -13,9 +13,8 @@ const Experience = () => {
       period: "May 2023 - Present",
       description: "Completed a 10-week intensive online program by McKinsey, building key workplace skills like adaptability, communication, problem-solving, and digital proficiency, while earning a digital badge and joining a global network of lifelong learners.",
       achievements: [
-        "Improved application performance by 40%",
-        "Led team of 5 developers",
-        "Implemented CI/CD pipelines"
+        "Learnt from about problem solving, communication and adaptbility"
+        "recieved badge for completion"
       ],
       icon: Code,
       color: "from-blue-500 to-cyan-500"
