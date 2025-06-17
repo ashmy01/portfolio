@@ -8,14 +8,14 @@ const Projects = () => {
       title: "VeilX - AI based Redaction Website",
       description: "Contributed to the UI/UX design, ideation, and documentation of an AI-powered decentralized redaction and locker tool leveraging LLMs, computer vision, and IPFS for secure data handling and monetization.",
       tags: ["IPFS", "solidity", "Next.js", "Tailwind CSS","Gemini Pro","YOLOv5u"],
-      image: "https://cdn.discordapp.com/attachments/1149352972644532365/1382328346326732821/image.png?ex=684ac118&is=68496f98&hm=c5ebd1716882ad7687c82098711bc71f9da1d7fe51191da2230d497906062ee4&",
+      image: "https://github.com/user-attachments/assets/a6531b40-4751-4ce9-81c3-21bec52326df",
       featured: true
     },
     {
       title: "BhuvanRKSHA",
       description: "Conducted data analysis, feature engineering, and Power BI dashboard creation to enhance threat detection through data-driven insights and collaboration with the development team.",
       tags: ["React Native", "Firebase", "TensorFlow"],
-      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop",
+      image: "https://lh7-us.googleusercontent.com/cOsH7-Dh0nQaTbUkWHKOMA2-vu9L7rX8ZokdfVdqxbYmX32MuwiBf8chC6R8LLuexmKBgJL9dIIm0g2yEf1d_dA5VV8qGGL0vvzYf_rwDD7M0UdiHiZ35xVu9vJwsRWjSy3-DLQGXtR1YCMdn3ORDQ",
       featured: false
     },
     // {

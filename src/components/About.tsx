@@ -21,7 +21,7 @@ const About = () => {
             </h2>
             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
               <p>
-                I'm a passionate creative professional who believes in the power of 
+                I'm a passionate creative indiviual who believes in the power of 
                 thoughtful design and clean code. My work sits at the intersection of 
                 <span className="text-primary font-medium"> aesthetics and functionality</span>, 
                 creating digital experiences that are both beautiful and purposeful.
